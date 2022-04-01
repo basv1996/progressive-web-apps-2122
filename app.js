@@ -12,6 +12,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 const router = require("./routes/route.js");
+const PORT = process.env.PORT || 3000
 
 // set the view engine to ejs
 app.set("view engine", "ejs");
@@ -21,7 +22,9 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(__dirname + "/public"));
 
 
-app.listen(3000)
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});
 
 
 //using the router when you are on the index
