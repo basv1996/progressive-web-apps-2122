@@ -1,5 +1,9 @@
 # Progressive Web Apps @cmda-minor-web · 2021/22
 
+## Assessment
+"In this course we will convert the client side web application previously made Web App From Scratch into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Ultimately we are going to implement a series of optimisations to improve the performance of the application."
+
+
 ![pwa](https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png)
 
 ## Table of Contents
@@ -10,21 +14,21 @@
 - [Grading](#grading)
 - [Programme](#programme)
 
-## Synopsis
-- Course: Progressive Web Apps
-- Course Coordinator: Justus Sturkenboom ([@ju5tu5](https://github.com/ju5tu5))
-- Minor Coordinator(s): Joost Faber ([@joostf](https://github.com/joostf)) Koop Reynders ([@KoopReynders](https://github.com/KoopReynders))
-- Lecturers: Declan Rek ([@decrek](https://github.com/decrek)) & Justus Sturkenboom ([@ju5tu5](https://github.com/ju5tu5))
-- Student Assistants: Daan Korver ([@daankorver](https://github.com/DaanKorver)) & Justin Lung ([@justinlung](https://github.com/JustinLung))
-- Credit: 3 ECTS credits
-- Academic year: 2021-2022
-- Programme: Communication and Multimedia Design (full time bachelor)
-- Language: Dutch instructions and English resources
 
 ## Description
 In this course we convert the client side web application, made during the Web App From Scratch course, into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Finally we’ll implement a series of optimisations to improve the performance of the application.  
 
 ## Week 1
+
+In week one I converted my Barcode Scanner application into a server side application. But after one day I realised that this was not the best strategy and I wanted to create something new. In the mean time I started reading about NodeJS and Express. I followed some tutoials and got my first look at the project.
+
+On day 2 I decied to try to make a new application but with another API. I chose for [The Movie Databse API](https://developers.themoviedb.org/3/getting-started/introduction). With this API I could get the data from different movies and tv shows. I started with trying to fetch the data server side and into my console.
+
+## Week 2
+
+I made a home page last week that displayed the movies. Now it's time to make a overview page per movie. I created a new route that get's the ID of the movie. This route will contain the data from the movie with that corresponding ID. 
+I also wanted to make a search form in my application for the user to be able to search for movies. But after I learned about service workers and making your PWA work offline I decided not to implement that idea.
+This week I also created a service worker that made my PWA usable even if the user lost his or hers connection with the internet.
 
 ### How to get the server up and running 
 #### Installation
