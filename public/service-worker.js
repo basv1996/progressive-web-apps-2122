@@ -1,10 +1,11 @@
 const cacheName = 'v1';
 
 const cacheAssets = [
+	'/',
 	'/styles/style.css',
 	'/scripts/main.js',
 	'/manifest.json',
-	'/',
+	'/images/MovieBackground.jpeg',
 	'/offline',
     'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap'
 ];
