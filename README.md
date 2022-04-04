@@ -33,29 +33,33 @@ Bij server-side rendering worden webpagina's voorbereid om te worden weergegeven
 
 
 
-### How to get the server up and running 
-#### Installation
-To install this application you need to have `NodeJS` and `NPM` installed on your device.
+### Hoe krijg de server aan
+#### Installatie
+om deze app te installeren heb je `NodeJS` en `NPM` nodig op jou apparat.
 
-##### How to get this to your machine?
+##### HHoe te installeren op jouw machine
 
-Clone this repo to your computer with the following command
+Clone deze repo naar je pc met het volgende commando
+
 ```
 git clone https://github.com/basv1996/progressive-web-apps-2122.git
 ```
-In the command line type the following code to download 
+Type in de command line het volgende om te downloaden 
 
 ```
 npm install
 ```
-this will install all the packages you need to run this application 
+Dit zal alle packages die je nodig hebt voor deze applicatie installeren
 
-#### Starting the server
-The application should start autamatically if not then try the following.
+
+#### Het starten van de server
+De applicatie zou automatisch moeten starten, zo niet probeer dan het volgende
+
 ```bash
 npm run start
 ```
-The application will be running on port 3000. So you'll have to go to localhost:3000
+De applicatie zal op poort 3000 runnen. Je gaat dus naar localhost:3000
+
 
 
 
