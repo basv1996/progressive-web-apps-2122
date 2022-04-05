@@ -55,19 +55,19 @@ router.get('/offline', (req, res) => {
 // })
 
 
-app.get('/search', (req, res) => {
-  fetch(`https://api.themoviedb.org/3/movie?query=${req.query.searchMovie}?api_key=${process.env.API_KEY}`)
-  .then(async response => { 
-    const movieData = await  response.json()
-    console.log("mijn movie data is: ", movieData)
+// app.get('/search', (req, res) => {
+//   fetch(`https://api.themoviedb.org/3/movie?query=${req.query.searchMovie}?api_key=${process.env.API_KEY}`)
+//   .then(async response => { 
+//     const movieData = await  response.json()
+//     console.log("mijn movie data is: ", movieData)
     
-    res.render('pages/searchResults', {
-    title: req.query.searchMovie,
-    movieData 
-  })
+//     res.render('pages/searchResults', {
+//     title: req.query.searchMovie,
+//     movieData 
+//   })
         
-    })
-  })
+//     })
+//   })
 
  
 //route for 404 page
