@@ -1,6 +1,6 @@
 # App Interface
 
-![Interface van de app](https://raw.githubusercontent.com/basv1996/######)
+![Interface van de app](https://raw.githubusercontent.com/basv1996/progressive-web-apps-2122/main/docs/img/MovieDataBase_homescreen.png)
 
 # Link naar de app
 :globe_with_meridians: [Link naar live app](https://basv1996.github.io/web-app-from-scratch-2122/spa/) 
@@ -74,7 +74,7 @@ Deze middleware zal nooit reacties comprimeren die een Cache-Control-header beva
 Met de property `font-display: swap` kan je voor een fallback zorgen. Als het exeterne font nog niet ingeladen zal eerst het standaard font worden getoond zodat er content op de pagina aanwezig is. met de `swap` property geeft het lettertype een extreem kleine blokperiode en een oneindige wisselperiode.
 
 
-# Hoe krijg de server aan
+# Hoe krijg je de server aan
 #### Installatie
 om deze app te installeren heb je `NodeJS` en `NPM` nodig op jou apparat.
 
