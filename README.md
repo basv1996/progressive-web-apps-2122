@@ -61,6 +61,14 @@ https://web.dev/add-manifest/#:~:text=The%20web%20app%20manifest%20is,when%20the
 # Service worker
 Met een `service worker`, een script dat op de achtergrond in je browser draait, waarmee je dingen kan doen zonder gebruikersinteractie — kan je bijvoorbeeld push notifications gebruiken, data offline opslaan en synchroniseren als er een netwerkverbinding is.
 
+# het verbeteren van het critical render pad
+
+## Cache Headers
+Een effectieve implementatie van de cachingstrategie kan de veerkracht van de Express-app aanzienlijk verbeteren en kosten besparen. Wanneerje de juiste cachingstrategieën in combinatie met een content delivery network (CDN) implementeert, kan de website enorme pieken in het verkeer opvangen zonder toename van de serverbelasting.
+
+## compressie extensie
+
+
 ### Hoe krijg de server aan
 #### Installatie
 om deze app te installeren heb je `NodeJS` en `NPM` nodig op jou apparat.
