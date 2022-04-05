@@ -31,7 +31,35 @@ Bij server-side rendering worden webpagina's voorbereid om te worden weergegeven
 
 
 
+# Create a manifest
 
+De web app manifest is een JSOn bestand die de browser verteld over je PWA. Het verteld hoe het zich moet gedragen als de PWA wordt gedownload op de gebruiker desktop of mobiel. Een manifest heeft in het bestand staan wat de naam van de app is, welke iconen gebruikt moeten worden en welke URL er geopend moet worden als de app wordt gestart.
+
+Een manifest bestand wordt meestal <code>manifest.json</code> genoemd.
+
+De volgende keys heb je nodig voor je manifest bestand:
+1. short_name of de naam
+2. short_name
+3. icons
+4. start_url
+5. display
+6. orientation
+7. background_color
+8. theme_color
+
+Het manifest bestand kan je toevoegen in je head. Je voegt hem toe met de `link` tag.
+
+```
+<link rel="manifest" href="/manifest.json">
+```
+
+<details>
+<summary>Bronnen:</summary>
+https://web.dev/add-manifest/#:~:text=The%20web%20app%20manifest%20is,when%20the%20app%20is%20launched.
+</details>
+
+# Service worker
+Met een `service worker`, een script dat op de achtergrond in je browser draait, waarmee je dingen kan doen zonder gebruikersinteractie — kan je bijvoorbeeld push notifications gebruiken, data offline opslaan en synchroniseren als er een netwerkverbinding is.
 
 ### Hoe krijg de server aan
 #### Installatie
