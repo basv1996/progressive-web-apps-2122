@@ -3,6 +3,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Oxygen', sans-serif;
+    font-display: swap;
     box-sizing: border-box;
 }
 

@@ -1,6 +1,7 @@
 //const http = require('http');
 const express = require("express")
 const process = require("process")
+const compression = require('compression')
 const app = express()
 const path = require('path')
 require("dotenv").config();
@@ -20,6 +21,8 @@ app.set("views", path.join(__dirname, "views"));
 
 // // //using static files
 app.use(express.static(__dirname + "/public"));
+
+app.use(compression())
 
 
 app.listen(PORT, () => {

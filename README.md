@@ -62,18 +62,23 @@ https://web.dev/add-manifest/#:~:text=The%20web%20app%20manifest%20is,when%20the
 Met een `service worker`, een script dat op de achtergrond in je browser draait, waarmee je dingen kan doen zonder gebruikersinteractie — kan je bijvoorbeeld push notifications gebruiken, data offline opslaan en synchroniseren als er een netwerkverbinding is.
 
 # het verbeteren van het critical render pad
-
 ## Cache Headers
 Een effectieve implementatie van de cachingstrategie kan de veerkracht van de Express-app aanzienlijk verbeteren en kosten besparen. Wanneerje de juiste cachingstrategieën in combinatie met een content delivery network (CDN) implementeert, kan de website enorme pieken in het verkeer opvangen zonder toename van de serverbelasting.
 
-## compressie extensie
+## Compressie Extensie
+Retourneert de compressie-middleware met behulp van de gegeven opties. De middleware zal proberen om response bodies te comprimeren voor alle verzoeken die door de middleware gaan, op basis van de gegeven opties.
+
+Deze middleware zal nooit reacties comprimeren die een Cache-Control-header bevatten met de no-transform-richtlijn, omdat comprimeren de body zal transformeren.
+
+## Font-display
+Met de property `font-display: swap` kan je voor een fallback zorgen. Als het exeterne font nog niet ingeladen zal eerst het standaard font worden getoond zodat er content op de pagina aanwezig is. met de `swap` property geeft het lettertype een extreem kleine blokperiode en een oneindige wisselperiode.
 
 
-### Hoe krijg de server aan
+# Hoe krijg de server aan
 #### Installatie
 om deze app te installeren heb je `NodeJS` en `NPM` nodig op jou apparat.
 
-##### HHoe te installeren op jouw machine
+##### Hoe te installeren op jouw machine
 
 Clone deze repo naar je pc met het volgende commando
 
