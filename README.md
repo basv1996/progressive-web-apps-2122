@@ -33,6 +33,7 @@ Bij server-side rendering worden webpagina's voorbereid om te worden weergegeven
 
 ## Activity Diagram
 
+![Activity Digram](https://raw.githubusercontent.com/basv1996/progressive-web-apps-2122/main/docs/img/FlowChart_PWA_V1.0.png)
 
 
 # Create a manifest
