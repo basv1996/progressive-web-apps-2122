@@ -3,15 +3,19 @@
 ![Interface van de app](https://raw.githubusercontent.com/basv1996/progressive-web-apps-2122/main/docs/img/MovieDataBase_homescreen.png)
 
 # Link naar de app
-:globe_with_meridians: [Link naar live app](https://basv1996.github.io/web-app-from-scratch-2122/spa/) 
+:globe_with_meridians: [Link naar live app](https://progressive-web-apps-2122.herokuapp.com/) 
 
 ## Table of Contents
-- [Synopsis](#synopsis)
-- [Description](#description)
-- [Communication](#communication)
-- [Goals](#goals)
-- [Grading](#grading)
-- [Programme](#programme)
+- [App interface](#app-interface)
+- [Link naar de app](#link-naar-de-app)
+- [Inhoudsopgave](#table-of-contents)
+- [De Opdracht](#de-opdracht)
+- [Doelen van het vak](#doelen-bij-dit-vak)
+- [Server Side & Client Side rendering](#server-side--client-side-renderen)
+- [Activity Diagram](#activity-diagram)
+- [Manifest](#create-a-manifest)
+- [Critical Render Pad](#het-verbeteren-van-het-critical-render-pad)
+- [De server aan krijgen](#hoe-krijg-je-de-server-aan)
 
 # De Opdracht
 "In deze cursus gaan we de eerder gemaakte Web App From Scratch client side webapplicatie omzetten naar een serverside rendered applicatie. Ook voegen we functionaliteiten toe op basis van de Service Worker en maken we van de applicatie een Progressive Web App. Uiteindelijk gaan we een reeks optimalisaties  implementeren om de prestaties van de applicatie te verbeteren."
