@@ -31,9 +31,22 @@ After finishing this program you can:
 ## Server Side & Client Side renderen
 Bij server-side rendering worden webpagina's voorbereid om te worden weergegeven door de server in plaats van door de browser van de gebruiker. Dit is het tegenovergestelde van client-side rendering. Dit proces bereidt de pagina voor op weergave aan de gebruikerskant. Het implementeren van server-side rendering biedt met name voordelen voor zoekmachineoptimalisatie (SEO) en laadsnelheid.
 
+### Waarom zou je kiezen voor server side renderen
+Er zijn verschillende reden om via de server je pgina's te renderen.
+
+1. Je pagina laadt sneller. Als je pagian's rendert via de client (via de browser) zal er elke keer als je op een linkt klinkt een nieuwe request worden gedaan wat opnieuw alle bestanden inlaad. Als je dit via de server afhandelt dan heb je weliswaar maar 1 request naar de server te doen. Hierdoor zal de gebruikeer een snellere en plezierige ervaring krijgen.
+
+2. Het zal de eindgebruiker data schelen wat geladen moet worden aangezien dit al op de server zelf gebeurt.
+
+3. De pagina's zijn beter indexbaar. Hierdoor gaat de SEO vooruit.
+
 ## Activity Diagram
 
 ![Activity Digram](https://raw.githubusercontent.com/basv1996/progressive-web-apps-2122/main/docs/img/FlowChart_PWA_V1.0.png)
+
+## actvity diagram van de service worker
+
+![Actvity Diagram van de service worker](https://raw.githubusercontent.com/basv1996/progressive-web-apps-2122/main/docs/img/PWA-2-serviceWorkerWireflow.png)
 
 
 # Create a manifest
@@ -64,7 +77,7 @@ https://web.dev/add-manifest/#:~:text=The%20web%20app%20manifest%20is,when%20the
 </details>
 
 # Service worker
-Met een `service worker`, een script dat op de achtergrond in je browser draait, waarmee je dingen kan doen zonder gebruikersinteractie — kan je bijvoorbeeld push notifications gebruiken, data offline opslaan en synchroniseren als er een netwerkverbinding is.
+Met een `service worker`, een script dat op de achtergrond in je browser draait, waarmee je dingen kan doen zonder gebruikersinteractie — kan je bijvoorbeeld push notifications gebruiken, data offline opslaan en synchroniseren als er een netwerkverbinding is. Het script kan afzonderlijk van de browser worden uitgevoerd. Deze service worker bevind zich tussen de client en de server in. Dus als de client via zijn of haar kant een request doet naar de server toe gaat dit eeerst via de service worker. Als de Server een response teruggeeft aan de client gaat deze ook weer door de service worker heen. Deze onthoudt dan in de cache voordat de request wordt getoond aan de gebruiker.
 
 # het verbeteren van het critical render pad
 ## Cache Headers
@@ -77,6 +90,9 @@ Deze middleware zal nooit reacties comprimeren die een Cache-Control-header beva
 
 ## Font-display
 Met de property `font-display: swap` kan je voor een fallback zorgen. Als het exeterne font nog niet ingeladen zal eerst het standaard font worden getoond zodat er content op de pagina aanwezig is. met de `swap` property geeft het lettertype een extreem kleine blokperiode en een oneindige wisselperiode.
+
+## Afbeeldingen rescalen
+Ik heb ervoor gezorgt dat ik afbeeldingen van 200px groot inlaad. Hierdoor zijn de afbeeldingen relatief klein en zullen ze minder zwaar zijn voor de website om te laden.
 
 
 # Hoe krijg je de server aan

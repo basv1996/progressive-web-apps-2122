@@ -1,6 +1,7 @@
 <section class="popular">
     <h2>Popular Movies</h2>
     <div class="results">
+        <!-- For each movie in the fetch array get the movie id, title, image and vote average. -->
      <% results.movies.forEach((movie)=> { %>
         <a href="movies/<%=movie.id%>">
             <!-- <h3>
@@ -10,12 +11,6 @@
             <p><%= movie.vote_average %></p>
         </a>
     <% }) %>
-  
         </div>
-
-<%- //console.log("resultaten zijn", results.movies)%>
-
-<%- //console.log("titels zijn", results.movies.map(movie => movie.title))%>
-
 </section>
 
